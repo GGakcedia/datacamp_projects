@@ -74,3 +74,5 @@ print("Best: %f using %s" % (best_train_score, best_train_params))
 # Extract the best model and evaluate it on the test set
 best_model = grid_model_result.best_estimator_
 best_score =  best_model.score(rescaledX_test, y_test)
+
+print("Accuracy of logistic regression classifier: ", best_score)
